@@ -1,11 +1,21 @@
 version: 2
 updates:
   - package-ecosystem: "composer"
-    directory: "/" 
+    directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+    open-pull-requests-limit: 10
+    rebase-strategy: "auto"
+    allow:
+      - dependency-type: "all"
 
-  - package-ecosystem: "npm" 
-    directory: "/" 
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+    open-pull-requests-limit: 10
+    rebase-strategy: "auto"
+    allow:
+      - dependency-type: "all"
+
+enable-beta-ecosystems: true
