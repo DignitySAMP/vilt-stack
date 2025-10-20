@@ -2,17 +2,21 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
-        "dev": "vite"
+        "build": "vue-tsc && vite build",
+        "dev": "vite",
+        "type-check": "vue-tsc --noEmit"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.1.14",
+        "@types/node": "^24.8.1",
         "@vitejs/plugin-vue": "^6.0.1",
         "axios": "^1.12.2",
         "concurrently": "^9.2.1",
         "laravel-vite-plugin": "^2.0.1",
         "tailwindcss": "^4.1.14",
-        "vite": "^7.1.10"
+        "typescript": "^5.9.3",
+        "vite": "^7.1.10",
+        "vue-tsc": "^3.1.1"
     },
     "dependencies": {
         "@inertiajs/vue3": "^2.2.8",
