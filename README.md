@@ -27,6 +27,16 @@ This one is pretty much empty, except for the following libraries:
 - **Tailwind CSS**  version 4.^ (vite)
 - **Ziggy.js** version 2.^
 
+## TypeScript
+
+Looking for TypeScript support? Check out the [`typescript` branch](https://github.com/DignitySAMP/vilt-stack/tree/typescript) which includes:
+- Full TypeScript configuration for Vue 3 components
+- Type definitions for Inertia.js page props
+- Type definitions for Ziggy.js route helper
+- Base configured `tsconfig.json` and Vite setup
+
+The TypeScript branch maintains the same "no bloat" philosophy with just the essential type definitions needed for a type-safe VILT stack.
+
 ## Project Structure
 
 Vite is configured to inherit from `resources/js/`. Naturally you will want to create your `Layouts`, `Components`, `Stores` or `Composables` folders here depending on use case. 
