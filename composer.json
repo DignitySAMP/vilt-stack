@@ -1,11 +1,16 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "dignitysamp/viltstack",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Scaffolds a skeleton Laravel 12.x application with Inertia 2.x, Vue 3.5.x and Tailwind CSS 4.x.",
     "keywords": [
         "laravel",
-        "framework"
+        "vue",
+        "tailwind",
+        "inertia",
+        "stack",
+        "template",
+        "vilt"
     ],
     "license": "MIT",
     "require": {
