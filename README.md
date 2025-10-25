@@ -50,15 +50,7 @@ Tailwind entry .css can be found at `@/css/app.css`. Inertia's middleware is con
 
 ```bash
 # Install dependencies
-composer install
-npm install
-
-# Environment setup
-cp .env.example .env
-php artisan key:generate
-
-# Database
-php artisan migrate
+laravel new --using=dignitysamp/viltstack
 
 # Start development servers
 npm run dev          # In terminal 1
