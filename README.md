@@ -27,20 +27,9 @@ This one is pretty much empty, except for the following libraries:
 - **Tailwind CSS**  version 4.^ (vite)
 - **Ziggy.js** version 2.^
 
-## TypeScript
-
-Looking for TypeScript support? Check out the [`typescript` branch](https://github.com/DignitySAMP/vilt-stack/tree/typescript) which includes:
-- Full TypeScript configuration for Vue 3 components
-- Type definitions for Inertia.js page props
-- Type definitions for Ziggy.js route helper
-- Base configured `tsconfig.json` and Vite setup
-
-The TypeScript branch maintains the same "no bloat" philosophy with just the essential type definitions needed for a type-safe VILT stack.
-
 ## Project Structure
 
 Vite is configured to inherit from `resources/js/`. Naturally you will want to create your `Layouts`, `Components`, `Stores` or `Composables` folders here depending on use case. 
-
 
 The template only ships a single page, `@/pages/Welcome.vue`, to give you a clean starting point. This is the default Laravel 12 Welcome page with Vue, Inertia and Tailwind cards added.
 
@@ -49,18 +38,12 @@ Tailwind entry .css can be found at `@/css/app.css`. Inertia's middleware is con
 ## Installation
 
 ```bash
-# Install dependencies
 laravel new --using=dignitysamp/viltstack
-
-# Start development servers
-npm run dev          # In terminal 1
-php artisan serve    # In terminal 2
 ```
 
 ## Usage
 
 > Named routes `->name('')` are automatically compatible in Vue by using `route('name')` and `route('name', property)` through **ziggy.js**.
-
 
 ### Creating Pages
 
