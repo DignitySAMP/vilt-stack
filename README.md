@@ -16,6 +16,8 @@ This template is a fresh Laravel installation with Vue 3, and Tailwind set up ou
 
 This template serves as the entry point for all of my web projects, and as such, gets maintained per personal use case. 
 
+> [If you're looking for this template with authentication provided out of the box (using Laravel Fortify), click here.](https://github.com/DignitySAMP/vilt-stack)
+
 ## Why another VILT stack?
 
 There are already a few VILT stacks released but almost all of them implement some sort of bloat that might not be preferred. 
