@@ -13,10 +13,11 @@
 ## What is it?
 
 This template is a fresh Laravel installation with Vue 3, and Tailwind set up out of the box. Inertia.js is configured to tie it all together with a clean ziggy.js configuration for routes. 
+> If you would like a version with TypeScript preinstalled and preconfigured, [click here](https://github.com/DignitySAMP/vilt-stack-ts).
 
 This template serves as the entry point for all of my web projects, and as such, gets maintained per personal use case. 
 
-> [If you're looking for this template with authentication provided out of the box (using Laravel Fortify), click here.](https://github.com/DignitySAMP/vilt-stack-fortify)
+> If you're looking for this template with authentication provided out of the box (using Laravel Fortify), [click here.](https://github.com/DignitySAMP/vilt-stack-fortify)
 
 ## Why another VILT stack?
 
