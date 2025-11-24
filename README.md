@@ -41,6 +41,8 @@ If you use JavaScript, you can find all configuration and files inside the `/js/
 
 ## Installation (using installer)
 
+This is meant to be installed on a fresh Laravel installation. As such:
+
 ```bash
 laravel new [your-app-name]
 composer require dignitysamp/vilt-stack
