@@ -167,7 +167,7 @@ class InstallCommand extends Command
 
         switch($router) { // add routing package based on stack (ts/js)
             case 'ziggy': {
-                $packages[] = 'tightenco/ziggy:^2.5';
+                $packages[] = 'tightenco/ziggy:^2.6';
                 break;
             }
             case 'wayfinder': {
