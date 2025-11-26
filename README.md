@@ -45,8 +45,8 @@ This is meant to be installed on a fresh Laravel installation. As such:
 
 ```bash
 laravel new [your-app-name]
-composer require dignitysamp/vilt-stack
-php artisan install:vilt
+composer require dignitysamp/viltstack
+php artisan vilt:install
 ```
 
 Important: currently only pnpm, npm and yarn are supported as package managers. If you choose TypeScript, **Wayfinder** will automatically be installed. If you choose JavaScript, **Ziggy.js** will be installed. 
