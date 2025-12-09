@@ -44,9 +44,17 @@ If you use JavaScript, you can find all configuration and files inside the `/js/
 This is meant to be installed on a fresh Laravel installation. As such:
 
 ```bash
+#create a fresh laravell application
 laravel new [your-app-name]
-composer require dignitysamp/viltstack
+
+#require the package
+composer require dignitysamp/viltstack:dev-main
+
+#run the install command
 php artisan vilt:install
+
+#follow the instructons during the install command
+#after installation, you are free to remove the packages from composer.json and composer.lock
 ```
 
 Important: currently only pnpm, npm and yarn are supported as package managers. If you choose TypeScript, **Wayfinder** will automatically be installed. If you choose JavaScript, **Ziggy.js** will be installed. 
