@@ -156,30 +156,28 @@ class InstallCommand extends Command
     protected function requireComposerPackages($router)
     {
         $composer = $this->option('composer');
+        $command = ($composer !== 'global')
+            ? ['php', $composer, 'require']
+            : ['composer', 'require'];
 
-        if ($composer !== 'global') {
-            $command = ['php', $composer, 'require'];
-        }
-
-        $packages = [ // include inertia package
-            'inertiajs/inertia-laravel:^2.0',
+        // a list of packages -> added to make it a bit easier to maintain the versions
+        $packagesList = [
+            'inertia' => 'inertiajs/inertia-laravel:^2.0',
+            'ziggy' => 'tightenco/ziggy:^2.6',
+            'wayfinder' => 'laravel/wayfinder:^0.1',
         ];
-
-        switch($router) { // add routing package based on stack (ts/js)
-            case 'ziggy': {
-                $packages[] = 'tightenco/ziggy:^2.6';
-                break;
-            }
-            case 'wayfinder': {
-                $packages[] = 'laravel/wayfinder:^0.1.12';
-                break;
-            }
-        }
+    
+        // base packages (always installed)
+        $packages = [
+            $packagesList['inertia'],
+        ];
         
-        $command = array_merge(
-            $command ?? ['composer', 'require'],
-            $packages
-        );
+        // add routing package based on stack (ts/js)
+        if (isset($packagesList[$router])) {
+            $packages[] = $packagesList[$router];
+        }
+
+        $command = array_merge($command, $packages);
 
         return (new Process($command, base_path(), ['COMPOSER_MEMORY_LIMIT' => '-1']))
             ->setTimeout(null)
