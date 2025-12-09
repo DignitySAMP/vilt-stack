@@ -10,9 +10,25 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "esModuleInterop": true,
-        "lib": ["ESNext", "DOM", "DOM.Iterable"],
-        "types": ["vite/client", "./resources/ts/types"]
+        "lib": [
+            "ESNext",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "types": [
+            "vite/client",
+            "./resources/ts/types"
+        ],
+        "paths": {
+            "@/*": [
+                "./resources/ts/*"
+            ],
+        },
     },
-    "include": ["resources/ts/**/*.ts", "resources/ts/**/*.tsx", "resources/ts/**/*.vue", "resources/ts/**/*.d.ts"]
+    "include": [
+        "resources/ts/**/*.ts",
+        "resources/ts/**/*.tsx",
+        "resources/ts/**/*.vue",
+        "resources/ts/**/*.d.ts"
+    ]
 }
-
