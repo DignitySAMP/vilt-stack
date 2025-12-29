@@ -1,3 +1,6 @@
+There is no point in keeping this repository. You should use the [official Laravel Vue starter kit](https://github.com/laravel/vue-starter-kit) and scaffold it with or without authentication.
+<details>
+  <summary>Old readme</summary>
 # VILT (Vue, Inertia, Tailwind and Laravel) stack
 
 <p align="center">
@@ -112,3 +115,4 @@ Laravel should install Tailwind by default, but to double check your Laravel app
 ```
 
 If it looks like this, or at the very least includes `@import 'tailwindcss';` you should be good to go.
+</details>
